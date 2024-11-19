@@ -50,7 +50,7 @@ To gain insights from the data, i chose questions like:
 - **Questions**:
   - Which host has the most offers?
   - What is the average number of offers per host?
-- **Insights**:
+**Insights**:
 Only 8 hosts provide 10 or more offers, indicating that they dominate the market compared to smaller hosts who manage fewer listings.
 
 The top 3 hosts are:
@@ -72,7 +72,7 @@ Market trends: A few dominant hosts may represent professionalization in the ren
 - **Questions**:
   - Which neighbourhood_group has the most offers?
   - Which specific neighbourhood has the most offers?
-- **Insights**:
+**Insights**:
 Calculating the total number of offers (including repeat listings), we obtained the following results:
 Brooklyn has the most offers with 249, followed by Manhattan with 210.
 Together, these two neighborhood groups dominate the market, accounting for a large majority of all listings compared to Queens (33), the Bronx (26), and Staten Island (25).
@@ -96,7 +96,9 @@ For new hosts, entering these markets can be challenging due to intense competit
 - **Questions**:
   - Which room type has the most offers?
   - Which room type is the most expensive by neighbourhood and room type?
-- **Insights**:
+ **Insights**
+
+  
 
 
 
