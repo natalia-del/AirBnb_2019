@@ -3,19 +3,22 @@
 ## 📜Project Overview
 This project involves a comprehensive analysis of the Airbnb dataset for New York City in 2019, focusing on various aspects such as host activity, neighborhood dynamics, room types, pricing trends, and availability. The objective is to derive actionable insights that can inform hosts, potential investors, and policy-makers regarding the short-term rental market.
 
+---
+
 ## 📦Data Source
 The dataset used for this analysis is from Airbnb, specifically containing listings from New York City for the year 2019. The primary table utilized is ab_nyc_2019. I finded it on kaggle. 
 
+---
+
 ### **📊Analysis Plan**
+
 ### **1. Data Exploration and Cleaning**
 Before starting the analysis, important is cleaning our data. Special attention I chained to:
 - Find duplicates
 - Remove the unncessary characters
 - Checked types of data
 
---- 
-
-### **2. Find appropriate questions **
+### **2. Find appropriate questions**
 To gain insights from the data, i chose questions like:
 
 #### **Hosts**
@@ -43,7 +46,7 @@ To gain insights from the data, i chose questions like:
 *You can find the SQL scripts addressing these questions in the repository.*
 
 ### **1. Hosts Analysis**
-- **Files**: [Hosts.sql]
+- **Files**: [Hosts.sql](DataAnalysis/Hosts.sql)
 - **Questions**:
   - Which host has the most offers?
   - What is the average number of offers per host?
