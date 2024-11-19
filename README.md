@@ -73,6 +73,33 @@ Market trends: A few dominant hosts may represent professionalization in the ren
   - Which neighbourhood_group has the most offers?
   - Which specific neighbourhood has the most offers?
 - **Insights**:
+Calculating the total number of offers (including repeat listings), we obtained the following results:
+Brooklyn has the most offers with 249, followed by Manhattan with 210.
+Together, these two neighborhood groups dominate the market, accounting for a large majority of all listings compared to Queens (33), the Bronx (26), and Staten Island (25).
+The busiest neighborhoods in the neighborhoods group are represented as follows:
+
+- Bronx - 'Eastchester' - 13
+- Brooklyn - 'Williamsburg' - 48
+- Manhattan - 'Harlem' - 49
+- Queens - 'Ridgewood' - 15
+- Staten Island - 'Tompkinsville' - 24
+
+Analysis:
+Brooklyn and Manhattan are by far the most competitive areas for hosts, likely due to their global popularity and high demand from both tourists and locals.
+The significant disparity in listings between Brooklyn/Manhattan and other neighborhood groups suggests a concentration of available accommodations in these prime locations.
+
+This could highlight:
+For new hosts, entering these markets can be challenging due to intense competition and higher saturation compared to other areas such as Queens or Staten Island.
+
+### **3. Room Types**
+- **Files**: `RoomTypes.sql`
+- **Questions**:
+  - Which room type has the most offers?
+  - Which room type is the most expensive by neighbourhood and room type?
+- **Insights**:
+
+
+
 
 
 
