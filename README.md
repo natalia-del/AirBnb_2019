@@ -97,7 +97,38 @@ For new hosts, entering these markets can be challenging due to intense competit
   - Which room type has the most offers?
   - Which room type is the most expensive by neighbourhood and room type?
  **Insights**
+The analysis of room types and their pricing across neighborhoods reveals the following:
 
+Room Type Availability:
+
+The most available room type is Private Room with 300 offers, followed by Entire Home with 237 offers, and Shared Room with only 6 offers.
+This indicates that Private Rooms dominate the market, likely due to their balance of affordability and comfort.
+Room Type Pricing Across Neighborhoods:
+
+On Manhattan:
+Entire Home: $192 (most expensive).
+Private Room: $94.
+Shared Room: $58.
+On Brooklyn:
+Entire Home: $178.
+Private Room: $86.
+On The Bronx:
+Entire Home: $105.
+Private Room: $58.
+On Queens:
+Entire Home: $192.
+Private Room: $102.
+On Staten Island:
+Private Room: $43 (cheapest option).
+Key Observations:
+
+Entire Homes are consistently the most expensive option, suggesting high demand for premium, full-space rentals.
+Private Rooms are the most abundant and moderately priced, making them the most cost-effective option for both hosts and guests.
+Shared Rooms are the least popular, likely due to lower demand for shared accommodations, which may indicate limited comfort or privacy.
+Implications:
+
+For new hosts: Private Rooms are likely the most viable entry point due to their balance of demand, affordability for guests, and ease of management.
+For Airbnb or similar platforms: Promoting Shared Rooms could help attract budget-conscious travelers, while focusing on Entire Homes in premium neighborhoods could cater to high-value customers.
   
 
 
