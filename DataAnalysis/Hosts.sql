@@ -19,18 +19,16 @@ WITH most_offerts AS (
 		host_id, 
 		host_name, 
 		SUM(calculated_host_listings_count) AS amount_offerts,
-        ROUND(AVG(calculated_host_listings_count),0) AS avg_offerts
+        	ROUND(AVG(calculated_host_listings_count),0) AS avg_offerts
     FROM 
 		ab_nyc_2019_AC_DD
     GROUP BY 
 		host_id, 
-        host_name
+        	host_name
 )
 SELECT *
 FROM 
 	most_offerts
-WHERE 
-	amount_offerts > 5
 ORDER BY 
 	amount_offerts DESC;
 
