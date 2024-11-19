@@ -19,45 +19,22 @@ FROM
 ORDER BY 
 	amount_offerts_in_neighbourhood_group DESC;
 
--- Create Temporary table to to make it easier to rely on data
-CREATE TEMPORARY TABLE neighbourhood_offerts AS(
-	SELECT
-		neighbourhood_group,
-		neighbourhood,
-		COUNT(neighbourhood) AS count_neighbourhood
-    FROM 
-		ab_nyc_2019_ac_dd
-    GROUP BY 
+-- Create CTE to find which neighbourhood has the most offerts
+WITH neighbourhood_offerts AS(
+	SELECT 
 		neighbourhood_group, 
-		neighbourhood
-);
+		neighbourhood,
+		SUM(calculated_host_listings_count) AS amount_offerts_in_neighbourhood
+	FROM 
+		ab_nyc_2019_ac_dd
+	GROUP BY 
+		neighbourhood_group,
+       	 	neighbourhood
+)
 SELECT *
 FROM 
 	neighbourhood_offerts
-order by 
-	neighbourhood_group,
-	neighbourhood;
-
--- Change type of coolumn
-ALTER TABLE neighbourhood_offerts
-MODIFY COLUMN count_neighbourhood INT;
-
--- Use CTE to find max count offerts in specific nighbourhood
-WITH max_offerts_in_neighbourhood as (
-	SELECT 
-		neighbourhood_group,
-        neighbourhood,
-		MAX(count_neighbourhood) as max_offerts
-	FROM 
-		neighbourhood_offerts
-	GROUP BY 
-		neighbourhood_group,
-        neighbourhood
-)
-Select *
-FROM  
-	max_offerts_in_neighbourhood
 ORDER BY 
-		neighbourhood_group, max_offerts DESC;
+	1,3 DESC;
 
 
