@@ -131,7 +131,7 @@ For new hosts: Private Rooms are likely the most viable entry point due to their
 For Airbnb or similar platforms: Promoting Shared Rooms could help attract budget-conscious travelers, while focusing on Entire Homes in premium neighborhoods could cater to high-value customers.
 
 ### **4. Pricing Analysis**
-- **Files**: `AVGpriceAVGnight.sql`, `ComparisonofAveragePriceperNighttoAverageNumberofNights.sql`
+- **Files**: [AVGpriceAVGnight.sql](DataAnalysis/AVGpriceAVGnight.sql), [ComparisonofAveragePriceperNighttoAverageNumberofNights.sql](DataAnalysis/ComparisonofAveragePriceperNighttoAverageNumberofNights.sql)
 - **Questions**:
   - What is the average price per night in each specific neighbourhood?
   - What is the average minimum number of nights required?
