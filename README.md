@@ -68,7 +68,7 @@ Market trends: A few dominant hosts may represent professionalization in the ren
 ---
 
 ### **2. Neighbourhood and Neighbourhood Groups**
-- **Files**: `Neighbourhood.sql`
+- **Files**: [Neighbourhood.sql](DataAnalysis/Neighbourhood.sql)
 - **Questions**:
   - Which neighbourhood_group has the most offers?
   - Which specific neighbourhood has the most offers?
@@ -171,6 +171,16 @@ Neighborhoods like Bushwick (Brooklyn) and Inwood (Manhattan) offer budget-frien
 
 This could highlight:
 Hosts have the opportunity to compete on price, especially in Brooklyn and Manhattan, where a variety of prices allows for flexibility in reaching different guest segments. Customers also have flexible choices.
+
+### **5. Availability and Reviews**
+- **Files**: `Reviews.sql`,`Reviews.sql`
+- **Questions**:
+  - Where were the most offers available for 365 days in a year?
+  - What is the average availability of offers?
+  - - In which year and month did hosts gather the most reviews?
+- **Insights**:
+  
+
 
 
 
