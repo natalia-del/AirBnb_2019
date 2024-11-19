@@ -4,10 +4,11 @@
 CALL show_all_table();
 
 -- Use CTE to find which room type was offerts the most time
+-- Use CTE to find which room type was offerts the most time
 WITH room_typ_choosen AS(
 	SELECT 
 		room_type,
-		COUNT(room_type) as room_type_amount
+		SUM(calculated_host_listings_count) as room_type_amount
     FROM 
 		ab_nyc_2019_AC_DD
     GROUP BY 
@@ -17,27 +18,32 @@ SELECT *
 FROM 
 	room_typ_choosen;
     
+SELECT *
+FROM ab_nyc_2019_AC_DD
+where room_type = 'Shared room';
+
+    
 -- Use CTE to find which room type was the most expensive
 WITH price_room_type AS(
 	SELECT 
 		neighbourhood_group,
 		room_type,
-		SUM(price) as total_sum_price
+		AVG(price) as total_sum_price
     FROM 
 		ab_nyc_2019_AC_DD
     GROUP BY 
-		neighbourhood_group, room_type
+		neighbourhood_group, 
+        room_type
 )
 SELECT 
 	neighbourhood_group,
 	room_type,
 	total_sum_price,
-	RANK() OVER(ORDER BY total_sum_price DESC) AS price_rank
+	DENSE_RANK() OVER(ORDER BY total_sum_price DESC) AS price_rank
 FROM 
 	price_room_type 
 ORDER BY 
 	 total_sum_price desc;
-
 
 
 -- add new row for the project
