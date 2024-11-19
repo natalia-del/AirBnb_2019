@@ -92,7 +92,7 @@ This could highlight:
 For new hosts, entering these markets can be challenging due to intense competition and higher saturation compared to other areas such as Queens or Staten Island.
 
 ### **3. Room Types**
-- **Files**: `RoomTypes.sql`
+- **Files**: [RoomTypes.sql](DataAnalysis/RoomTypes.sql)
 - **Questions**:
   - Which room type has the most offers?
   - Which room type is the most expensive by neighbourhood and room type?
@@ -105,34 +105,72 @@ The most available room type is Private Room with 300 offers, followed by Entire
 This indicates that Private Rooms dominate the market, likely due to their balance of affordability and comfort.
 Room Type Pricing Across Neighborhoods:
 
-On Manhattan:
+**On Manhattan:**
 Entire Home: $192 (most expensive).
 Private Room: $94.
 Shared Room: $58.
-On Brooklyn:
+**On Brooklyn:**
 Entire Home: $178.
 Private Room: $86.
-On The Bronx:
+**On The Bronx:**
 Entire Home: $105.
 Private Room: $58.
-On Queens:
+**On Queens:**
 Entire Home: $192.
 Private Room: $102.
-On Staten Island:
+**On Staten Island:**
 Private Room: $43 (cheapest option).
-Key Observations:
 
+Analysis:
 Entire Homes are consistently the most expensive option, suggesting high demand for premium, full-space rentals.
 Private Rooms are the most abundant and moderately priced, making them the most cost-effective option for both hosts and guests.
 Shared Rooms are the least popular, likely due to lower demand for shared accommodations, which may indicate limited comfort or privacy.
-Implications:
 
+This could highlight:
 For new hosts: Private Rooms are likely the most viable entry point due to their balance of demand, affordability for guests, and ease of management.
 For Airbnb or similar platforms: Promoting Shared Rooms could help attract budget-conscious travelers, while focusing on Entire Homes in premium neighborhoods could cater to high-value customers.
-  
 
+### **4. Pricing Analysis**
+- **Files**: `AVGpriceAVGnight.sql`, `ComparisonofAveragePriceperNighttoAverageNumberofNights.sql`
+- **Questions**:
+  - What is the average price per night in each specific neighbourhood?
+  - What is the average minimum number of nights required?
+  - How do these metrics compare across neighbourhoods?
+- **Insights**:
+Based on the analysis of average prices per night and the minimum number of nights required, we observe the following trends across neighborhoods in New York City:
 
+**The Bronx:**
+Cheapest: Highbridge – $42.50 per night.
+Most Expensive: Eastchester – $105 per night.
 
+**Brooklyn:**
+Cheapest: Bushwick – $60 per night.
+Most Expensive: Brooklyn Heights – $800 per night.
+
+**Manhattan:**
+Cheapest: Inwood – $60.62 per night.
+Most Expensive: Midtown – $6002.92 per night.
+**Note:**
+The exceptionally high average price in Midtown reflects the presence of ultra-luxury accommodations or unique properties commanding premium prices. 
+Such listings significantly elevate the average. It’s worth noting that the median price in Midtown may be much lower, making this a specific anomaly within the dataset.
+
+**Queens:**
+Cheapest: Jamaica – $55 per night.
+Most Expensive: Middle Village – $370 per night.
+
+**Staten Island:**
+Cheapest: Tompkinsville – $36 per night.
+Most Expensive: St. George – $70 per night.
+
+Analysis:
+Brooklyn and Manhattan dominate as the most expensive boroughs:
+Brooklyn Heights and Midtown stand out as premium neighborhoods, with extremely high prices driven by their popularity and demand.
+For example, Brooklyn offers both high-end locations like Brooklyn Heights ($800) and more affordable options like Bushwick ($60).
+Similarly, Manhattan has options ranging from Inwood ($60.62) to Midtown ($6002.92).
+Neighborhoods like Bushwick (Brooklyn) and Inwood (Manhattan) offer budget-friendly options, even in the city’s most visited boroughs.
+
+This could highlight:
+Hosts have the opportunity to compete on price, especially in Brooklyn and Manhattan, where a variety of prices allows for flexibility in reaching different guest segments. Customers also have flexible choices.
 
 
 
