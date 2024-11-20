@@ -49,34 +49,34 @@ To gain insights from the data, i chose questions like:
 - **Files**: [Hosts.sql](DataAnalysis/Hosts.sql)
 - **Questions**:
   - Which host has the most offers?
-  - What is the average number of offers per host?
-**Insights**:
-Only 8 hosts provide 10 or more offers, indicating that they dominate the market compared to smaller hosts who manage fewer listings.
+  - What is the average number of offers per host?  
+**Insights**:  
+Only 8 hosts provide 10 or more offers, indicating that they dominate the market compared to smaller hosts who manage fewer listings.  
 
 The top 3 hosts are:
 Mark (ID: 204539)
 Lissette (ID: 303939)
-Lisel (ID: 22486)
+Lisel (ID: 22486)  
 
-Analysis:
+Analysis:  
 This suggests that the top hosts have significantly more capacity and influence in the market. These hosts might have better resources or professional management capabilities, enabling them to handle multiple listings efficiently. In contrast, smaller hosts are likely individual property owners or occasional renters. 
 
-This could highlight:
+This could highlight:  
 Opportunities for small hosts: They might struggle to compete with larger operators unless supported by tailored incentives or platform features.
-Market trends: A few dominant hosts may represent professionalization in the rental market, shifting away from casual renting.
+Market trends: A few dominant hosts may represent professionalization in the rental market, shifting away from casual renting.  
 
 ---
 
-### **2. Neighbourhood and Neighbourhood Groups**
-- **Files**: [Neighbourhood.sql](DataAnalysis/Neighbourhood.sql)
-- **Questions**:
+### **2. Neighbourhood and Neighbourhood Groups**  
+- **Files**: [Neighbourhood.sql](DataAnalysis/Neighbourhood.sql)  
+- **Questions**:  
   - Which neighbourhood_group has the most offers?
-  - Which specific neighbourhood has the most offers?
-**Insights**:
+  - Which specific neighbourhood has the most offers?  
+**Insights**:  
 Calculating the total number of offers (including repeat listings), we obtained the following results:
 Brooklyn has the most offers with 249, followed by Manhattan with 210.
 Together, these two neighborhood groups dominate the market, accounting for a large majority of all listings compared to Queens (33), the Bronx (26), and Staten Island (25).
-The busiest neighborhoods in the neighborhoods group are represented as follows:
+The busiest neighborhoods in the neighborhoods group are represented as follows:  
 
 - Bronx - 'Eastchester' - 13
 - Brooklyn - 'Williamsburg' - 48
@@ -84,149 +84,149 @@ The busiest neighborhoods in the neighborhoods group are represented as follows:
 - Queens - 'Ridgewood' - 15
 - Staten Island - 'Tompkinsville' - 24
 
-Analysis:
+Analysis:  
 Brooklyn and Manhattan are by far the most competitive areas for hosts, likely due to their global popularity and high demand from both tourists and locals.
 The significant disparity in listings between Brooklyn/Manhattan and other neighborhood groups suggests a concentration of available accommodations in these prime locations.
 
-This could highlight:
+This could highlight:  
 For new hosts, entering these markets can be challenging due to intense competition and higher saturation compared to other areas such as Queens or Staten Island.
 
 ---
 
 ### **3. Room Types**
-- **Files**: [RoomTypes.sql](DataAnalysis/RoomTypes.sql)
+- **Files**: [RoomTypes.sql](DataAnalysis/RoomTypes.sql)  
 - **Questions**:
   - Which room type has the most offers?
-  - Which room type is the most expensive by neighbourhood and room type?
- **Insights**
-The analysis of room types and their pricing across neighborhoods reveals the following:
+  - Which room type is the most expensive by neighbourhood and room type?  
+ **Insights**  
+The analysis of room types and their pricing across neighborhoods reveals the following:  
 
-Room Type Availability:
+Room Type Availability:  
 
 The most available room type is Private Room with 300 offers, followed by Entire Home with 237 offers, and Shared Room with only 6 offers.
-This indicates that Private Rooms dominate the market, likely due to their balance of affordability and comfort.
-Room Type Pricing Across Neighborhoods:
+This indicates that Private Rooms dominate the market, likely due to their balance of affordability and comfort.  
+Room Type Pricing Across Neighborhoods:  
 
-**On Manhattan:**
+**On Manhattan:**  
 Entire Home: $192 (most expensive).
 Private Room: $94.
 Shared Room: $58.
-**On Brooklyn:**
+**On Brooklyn:**  
 Entire Home: $178.
 Private Room: $86.
-**On The Bronx:**
+**On The Bronx:**  
 Entire Home: $105.
 Private Room: $58.
-**On Queens:**
+**On Queens:**  
 Entire Home: $192.
 Private Room: $102.
-**On Staten Island:**
-Private Room: $43 (cheapest option).
+**On Staten Island:**  
+Private Room: $43 (cheapest option).  
 
-Analysis:
+Analysis:  
 Entire Homes are consistently the most expensive option, suggesting high demand for premium, full-space rentals.
 Private Rooms are the most abundant and moderately priced, making them the most cost-effective option for both hosts and guests.
-Shared Rooms are the least popular, likely due to lower demand for shared accommodations, which may indicate limited comfort or privacy.
+Shared Rooms are the least popular, likely due to lower demand for shared accommodations, which may indicate limited comfort or privacy.  
 
-This could highlight:
+This could highlight:  
 For new hosts: Private Rooms are likely the most viable entry point due to their balance of demand, affordability for guests, and ease of management.
-For Airbnb or similar platforms: Promoting Shared Rooms could help attract budget-conscious travelers, while focusing on Entire Homes in premium neighborhoods could cater to high-value customers.
+For Airbnb or similar platforms: Promoting Shared Rooms could help attract budget-conscious travelers, while focusing on Entire Homes in premium neighborhoods could cater to high-value customers.  
 
 ---
 
-### **4. Pricing Analysis**
+### **4. Pricing Analysis**  
 - **Files**: [AVGpriceAVGnight.sql](DataAnalysis/AVGpriceAVGnight.sql), [ComparisonofAveragePriceperNighttoAverageNumberofNights.sql](DataAnalysis/ComparisonofAveragePriceperNighttoAverageNumberofNights.sql)
-- **Questions**:
-  - What is the average price per night in each specific neighbourhood?
-  - What is the average minimum number of nights required?
-  - How do these metrics compare across neighbourhoods?
-**Insights**:
-Based on the analysis of average prices per night and the minimum number of nights required, we observe the following trends across neighborhoods in New York City:
+- **Questions**:  
+  - What is the average price per night in each specific neighbourhood?  
+  - What is the average minimum number of nights required?  
+  - How do these metrics compare across neighbourhoods?  
+**Insights**:  
+Based on the analysis of average prices per night and the minimum number of nights required, we observe the following trends across neighborhoods in New York City:  
 
-**The Bronx:**
-Cheapest: Highbridge – $42.50 per night.
-Most Expensive: Eastchester – $105 per night.
+**The Bronx:**  
+Cheapest: Highbridge – $42.50 per night.  
+Most Expensive: Eastchester – $105 per night.  
 
-**Brooklyn:**
-Cheapest: Bushwick – $60 per night.
-Most Expensive: Brooklyn Heights – $800 per night.
+**Brooklyn:**  
+Cheapest: Bushwick – $60 per night.  
+Most Expensive: Brooklyn Heights – $800 per night.  
 
-**Manhattan:**
-Cheapest: Inwood – $60.62 per night.
-Most Expensive: Midtown – $6002.92 per night.
-**Note:**
+**Manhattan:**  
+Cheapest: Inwood – $60.62 per night.  
+Most Expensive: Midtown – $6002.92 per night.  
+**Note:**  
 The exceptionally high average price in Midtown reflects the presence of ultra-luxury accommodations or unique properties commanding premium prices. 
-Such listings significantly elevate the average. It’s worth noting that the median price in Midtown may be much lower, making this a specific anomaly within the dataset.
+Such listings significantly elevate the average. It’s worth noting that the median price in Midtown may be much lower, making this a specific anomaly within the dataset.  
 
-**Queens:**
-Cheapest: Jamaica – $55 per night.
-Most Expensive: Middle Village – $370 per night.
+**Queens:**  
+Cheapest: Jamaica – $55 per night.  
+Most Expensive: Middle Village – $370 per night.  
 
-**Staten Island:**
-Cheapest: Tompkinsville – $36 per night.
-Most Expensive: St. George – $70 per night.
+**Staten Island:**  
+Cheapest: Tompkinsville – $36 per night.  
+Most Expensive: St. George – $70 per night.  
 
-Analysis:
+Analysis:  
 Brooklyn and Manhattan dominate as the most expensive boroughs:
 Brooklyn Heights and Midtown stand out as premium neighborhoods, with extremely high prices driven by their popularity and demand.
 For example, Brooklyn offers both high-end locations like Brooklyn Heights ($800) and more affordable options like Bushwick ($60).
 Similarly, Manhattan has options ranging from Inwood ($60.62) to Midtown ($6002.92).
-Neighborhoods like Bushwick (Brooklyn) and Inwood (Manhattan) offer budget-friendly options, even in the city’s most visited boroughs.
+Neighborhoods like Bushwick (Brooklyn) and Inwood (Manhattan) offer budget-friendly options, even in the city’s most visited boroughs.  
 
-This could highlight:
-Hosts have the opportunity to compete on price, especially in Brooklyn and Manhattan, where a variety of prices allows for flexibility in reaching different guest segments. Customers also have flexible choices.
+This could highlight:  
+Hosts have the opportunity to compete on price, especially in Brooklyn and Manhattan, where a variety of prices allows for flexibility in reaching different guest segments. Customers also have flexible choices.  
 
 ---
 
 ### **5. Availability and Reviews**
-- **Files**: [Reviews.sql](DataAnalysis/Reviews.sql)
-- **Questions**:
-  - Where were the most offers available for 365 days in a year?
-  - What is the average availability of offers?
-  - - In which year and month did hosts gather the most reviews?
-**Insights**:
-*Average Availability Across neighbourhoods:*
+- **Files**: [Reviews.sql](DataAnalysis/Reviews.sql)  
+- **Questions**:  
+  - Where were the most offers available for 365 days in a year?  
+  - What is the average availability of offers?  
+  - - In which year and month did hosts gather the most reviews?  
+**Insights**:  
+*Average Availability Across neighbourhoods:*  
 
-The longest average availability is in The Bronx with 347 days, followed by:
+The longest average availability is in The Bronx with 347 days, followed by:  
 Queens: 271 days.
 Staten Island: 266 days.
 Manhattan: 200 days.
 Brooklyn: 186 days.
 Offers Available for 365 Days:
 
-Only a few offers were available year-round:
+Only a few offers were available year-round:  
 1 offer in The Bronx.
 5 offers in Queens and Brooklyn.
-6 offers in Manhattan.
+6 offers in Manhattan.  
 
-Analysis:
+Analysis:  
 The Bronx and Queens show the highest average availability, which might indicate lower turnover rates or less demand compared to more tourist-heavy boroughs like Manhattan and Brooklyn.
-In contrast, Manhattan and Brooklyn have shorter average availability, which could reflect higher demand and frequent bookings.
+In contrast, Manhattan and Brooklyn have shorter average availability, which could reflect higher demand and frequent bookings.  
 
-This could highlight:
+This could highlight:  
 For hosts, areas like The Bronx and Queens may offer opportunities to attract long-term tenants or tourists seeking less crowded locations.
-For travelers, Manhattan and Brooklyn likely provide more dynamic and frequently updated options, catering to higher demand.
+For travelers, Manhattan and Brooklyn likely provide more dynamic and frequently updated options, catering to higher demand.  
 
-*Reviews Analysis*
+*Reviews Analysis*  
 
-Most Active Year and Month:
+Most Active Year and Month:  
 The year 2019 stands out as the most active year for reviews, with the highest number recorded in June 2019 (18,413 reviews).
-This period coincides with peak travel seasons, suggesting higher demand for short-term rentals.
+This period coincides with peak travel seasons, suggesting higher demand for short-term rentals.  
 
-Steady Growth in Reviews:
+Steady Growth in Reviews:  
 Reviews show a clear upward trend from 2015 to 2019, indicating the growing popularity of short-term rentals during this period.
-Notable spikes are observed in summer months, especially July and August, aligning with holiday seasons.
+Notable spikes are observed in summer months, especially July and August, aligning with holiday seasons.  
 
-Limited Data for Earlier Years:
-Reviews before 2015 are sparse, likely reflecting the earlier stages of the platform's adoption or limited data availability.
+Limited Data for Earlier Years:  
+Reviews before 2015 are sparse, likely reflecting the earlier stages of the platform's adoption or limited data availability.  
 
-Insights:
+Insights:  
 The concentration of reviews in mid-2019 suggests this was a peak period for short-term rental activity, likely driven by seasonal tourism.
 The decline in review numbers before 2015 and the gaps in data might indicate the platform’s early growth phase or data inconsistencies.
-For hosts, understanding peak review periods can help optimize listing availability and pricing strategies to capitalize on seasonal demand.
+For hosts, understanding peak review periods can help optimize listing availability and pricing strategies to capitalize on seasonal demand.  
 
   
-## **🚀 Conclusion**
+## **🚀 Conclusion**  
 This project demonstrates how SQL can be used to extract valuable insights from a large dataset. These insights can inform business decisions for Airbnb hosts and platform managers, such as identifying high-demand neighbourhoods, popular room types, and seasonal trends.
 
 
