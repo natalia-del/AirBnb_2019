@@ -72,7 +72,8 @@ Market trends: A few dominant hosts may represent professionalization in the ren
 - **Files**: [Neighbourhood.sql](DataAnalysis/Neighbourhood.sql)  
 - **Questions**:  
   - Which neighbourhood_group has the most offers?
-  - Which specific neighbourhood has the most offers?  
+  - Which specific neighbourhood has the most offers?
+
 **Insights**:  
 Calculating the total number of offers (including repeat listings), we obtained the following results:
 Brooklyn has the most offers with 249, followed by Manhattan with 210.
@@ -98,7 +99,8 @@ For new hosts, entering these markets can be challenging due to intense competit
 - **Files**: [RoomTypes.sql](DataAnalysis/RoomTypes.sql)  
 - **Questions**:
   - Which room type has the most offers?
-  - Which room type is the most expensive by neighbourhood and room type?  
+  - Which room type is the most expensive by neighbourhood and room type?
+
  **Insights**  
 The analysis of room types and their pricing across neighborhoods reveals the following:  
 
@@ -109,18 +111,22 @@ This indicates that Private Rooms dominate the market, likely due to their balan
 Room Type Pricing Across Neighborhoods:  
 
 **On Manhattan:**  
-Entire Home: $192 (most expensive).
-Private Room: $94.
-Shared Room: $58.
+Entire Home: $192 (most expensive).  
+Private Room: $94.  
+Shared Room: $58.  
+
 **On Brooklyn:**  
-Entire Home: $178.
-Private Room: $86.
+Entire Home: $178.  
+Private Room: $86.  
+
 **On The Bronx:**  
-Entire Home: $105.
-Private Room: $58.
+Entire Home: $105.  
+Private Room: $58.  
+
 **On Queens:**  
-Entire Home: $192.
-Private Room: $102.
+Entire Home: $192.  
+Private Room: $102.  
+
 **On Staten Island:**  
 Private Room: $43 (cheapest option).  
 
@@ -140,7 +146,8 @@ For Airbnb or similar platforms: Promoting Shared Rooms could help attract budge
 - **Questions**:  
   - What is the average price per night in each specific neighbourhood?  
   - What is the average minimum number of nights required?  
-  - How do these metrics compare across neighbourhoods?  
+  - How do these metrics compare across neighbourhoods?
+
 **Insights**:  
 Based on the analysis of average prices per night and the minimum number of nights required, we observe the following trends across neighborhoods in New York City:  
 
@@ -154,7 +161,7 @@ Most Expensive: Brooklyn Heights – $800 per night.
 
 **Manhattan:**  
 Cheapest: Inwood – $60.62 per night.  
-Most Expensive: Midtown – $6002.92 per night.  
+Most Expensive: Midtown – $6002.92 per night.   
 **Note:**  
 The exceptionally high average price in Midtown reflects the presence of ultra-luxury accommodations or unique properties commanding premium prices. 
 Such listings significantly elevate the average. It’s worth noting that the median price in Midtown may be much lower, making this a specific anomaly within the dataset.  
@@ -184,7 +191,8 @@ Hosts have the opportunity to compete on price, especially in Brooklyn and Manha
 - **Questions**:  
   - Where were the most offers available for 365 days in a year?  
   - What is the average availability of offers?  
-  - - In which year and month did hosts gather the most reviews?  
+  - In which year and month did hosts gather the most reviews?
+
 **Insights**:  
 *Average Availability Across neighbourhoods:*  
 
