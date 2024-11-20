@@ -9,19 +9,19 @@ WITH avail_by_365_days AS (
 	SELECT 
 		name,
 		neighbourhood_group,
-		MAX(availability_365) OVER(PARTITION BY neighbourhood_group) as max_avail
+		availability_365
     FROM 
 		ab_nyc_2019_ac_dd    
 )
 SELECT 
 	neighbourhood_group,
-	COUNT(max_avail) as amount_avail_offert_by_oneyear
+	COUNT(name) as amount_avail_offert_by_oneyear
 FROM 
 	avail_by_365_days
+WHERE 
+	availability_365 = 365
 GROUP BY 
-	neighbourhood_group
-ORDER BY 
-	neighbourhood_group DESC;
+	neighbourhood_group;
 
 -- AVG when offert was availbility 
 WITH avg_by_365_days AS (
@@ -46,19 +46,16 @@ ORDER BY
 -- In which year and month host gathering the most reviews?
 WITH reviews AS(
 	SELECT
-		host_name,
 		YEAR(last_review) as y,
 		MONTH(last_review) as m,
 		SUM(number_of_reviews) as amount_reviews
     FROM 
 		ab_nyc_2019_ac_dd
     GROUP BY 
-		host_name,
 		YEAR(last_review),
 		MONTH(last_review)  
 )
 SELECT 
-	host_name,
 	y,
 	m,
 	CASE 
@@ -72,30 +69,7 @@ ORDER BY
 	y desc,
 	m asc;
 
-WITH reviews AS(
-	SELECT
-        host_name,
-		YEAR(last_review) as y,
-		MONTH(last_review) as m,
-		SUM(number_of_reviews) as amount_reviews
-    FROM 
-		ab_nyc_2019_ac_dd
-    GROUP BY 
-		host_name,
-		YEAR(last_review),
-		MONTH(last_review)  
-)
-SELECT 
-	y,
-	m,
-	MAX(amount_reviews)
-FROM reviews
-GROUP BY 
-	y,
-	m
-ORDER BY
-	y desc,
-	m asc;
+
 
 
 
