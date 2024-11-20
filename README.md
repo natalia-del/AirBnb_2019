@@ -91,6 +91,8 @@ The significant disparity in listings between Brooklyn/Manhattan and other neigh
 This could highlight:
 For new hosts, entering these markets can be challenging due to intense competition and higher saturation compared to other areas such as Queens or Staten Island.
 
+---
+
 ### **3. Room Types**
 - **Files**: [RoomTypes.sql](DataAnalysis/RoomTypes.sql)
 - **Questions**:
@@ -130,13 +132,15 @@ This could highlight:
 For new hosts: Private Rooms are likely the most viable entry point due to their balance of demand, affordability for guests, and ease of management.
 For Airbnb or similar platforms: Promoting Shared Rooms could help attract budget-conscious travelers, while focusing on Entire Homes in premium neighborhoods could cater to high-value customers.
 
+---
+
 ### **4. Pricing Analysis**
 - **Files**: [AVGpriceAVGnight.sql](DataAnalysis/AVGpriceAVGnight.sql), [ComparisonofAveragePriceperNighttoAverageNumberofNights.sql](DataAnalysis/ComparisonofAveragePriceperNighttoAverageNumberofNights.sql)
 - **Questions**:
   - What is the average price per night in each specific neighbourhood?
   - What is the average minimum number of nights required?
   - How do these metrics compare across neighbourhoods?
-- **Insights**:
+**Insights**:
 Based on the analysis of average prices per night and the minimum number of nights required, we observe the following trends across neighborhoods in New York City:
 
 **The Bronx:**
@@ -172,13 +176,15 @@ Neighborhoods like Bushwick (Brooklyn) and Inwood (Manhattan) offer budget-frien
 This could highlight:
 Hosts have the opportunity to compete on price, especially in Brooklyn and Manhattan, where a variety of prices allows for flexibility in reaching different guest segments. Customers also have flexible choices.
 
+---
+
 ### **5. Availability and Reviews**
 - **Files**: [Reviews.sql](DataAnalysis/Reviews.sql)
 - **Questions**:
   - Where were the most offers available for 365 days in a year?
   - What is the average availability of offers?
   - - In which year and month did hosts gather the most reviews?
-- **Insights**:
+**Insights**:
 *Average Availability Across neighbourhoods:*
 
 The longest average availability is in The Bronx with 347 days, followed by:
