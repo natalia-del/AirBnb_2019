@@ -173,14 +173,55 @@ This could highlight:
 Hosts have the opportunity to compete on price, especially in Brooklyn and Manhattan, where a variety of prices allows for flexibility in reaching different guest segments. Customers also have flexible choices.
 
 ### **5. Availability and Reviews**
-- **Files**: `Reviews.sql`,`Reviews.sql`
+- **Files**: [Reviews.sql](DataAnalysis/Reviews.sql)
 - **Questions**:
   - Where were the most offers available for 365 days in a year?
   - What is the average availability of offers?
   - - In which year and month did hosts gather the most reviews?
 - **Insights**:
-  
+*Average Availability Across neighbourhoods:*
 
+The longest average availability is in The Bronx with 347 days, followed by:
+Queens: 271 days.
+Staten Island: 266 days.
+Manhattan: 200 days.
+Brooklyn: 186 days.
+Offers Available for 365 Days:
+
+Only a few offers were available year-round:
+1 offer in The Bronx.
+5 offers in Queens and Brooklyn.
+6 offers in Manhattan.
+
+Analysis:
+The Bronx and Queens show the highest average availability, which might indicate lower turnover rates or less demand compared to more tourist-heavy boroughs like Manhattan and Brooklyn.
+In contrast, Manhattan and Brooklyn have shorter average availability, which could reflect higher demand and frequent bookings.
+
+This could highlight:
+For hosts, areas like The Bronx and Queens may offer opportunities to attract long-term tenants or tourists seeking less crowded locations.
+For travelers, Manhattan and Brooklyn likely provide more dynamic and frequently updated options, catering to higher demand.
+
+*Reviews Analysis*
+
+Most Active Year and Month:
+The year 2019 stands out as the most active year for reviews, with the highest number recorded in June 2019 (18,413 reviews).
+This period coincides with peak travel seasons, suggesting higher demand for short-term rentals.
+
+Steady Growth in Reviews:
+Reviews show a clear upward trend from 2015 to 2019, indicating the growing popularity of short-term rentals during this period.
+Notable spikes are observed in summer months, especially July and August, aligning with holiday seasons.
+
+Limited Data for Earlier Years:
+Reviews before 2015 are sparse, likely reflecting the earlier stages of the platform's adoption or limited data availability.
+
+Insights:
+The concentration of reviews in mid-2019 suggests this was a peak period for short-term rental activity, likely driven by seasonal tourism.
+The decline in review numbers before 2015 and the gaps in data might indicate the platform’s early growth phase or data inconsistencies.
+For hosts, understanding peak review periods can help optimize listing availability and pricing strategies to capitalize on seasonal demand.
+
+  
+## **🚀 Conclusion**
+This project demonstrates how SQL can be used to extract valuable insights from a large dataset. These insights can inform business decisions for Airbnb hosts and platform managers, such as identifying high-demand neighbourhoods, popular room types, and seasonal trends.
 
 
 
