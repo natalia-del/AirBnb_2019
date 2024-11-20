@@ -49,7 +49,8 @@ To gain insights from the data, i chose questions like:
 - **Files**: [Hosts.sql](DataAnalysis/Hosts.sql)
 - **Questions**:
   - Which host has the most offers?
-  - What is the average number of offers per host?  
+  - What is the average number of offers per host?
+
 **Insights**:  
 Only 8 hosts provide 10 or more offers, indicating that they dominate the market compared to smaller hosts who manage fewer listings.  
 
